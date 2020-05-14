@@ -1,0 +1,241 @@
+.surf{
+    padding: 160px 0 120px;
+    background-image: url(../img/surf-bg.png);
+    background-position: right 200px;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    &__subtitle{
+        text-align: right;
+        padding-right: 80px;
+        margin-top: -86px;
+    }
+
+    &-box{    
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all .5s;
+        
+        &__inner{
+            min-height: 750px;
+            background: rgba( #1C2121, .85);
+            position: relative;
+
+            &-title{
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 36px;
+                padding: 72px 0 0 40px;
+                width: 140px;
+            }
+            &-location{
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 8px;
+                transform: rotate(-90deg);
+                position: absolute;
+                left: 40px;
+                bottom: 40px;
+                width: 0;
+                height: 0;
+                white-space: nowrap;
+                span{
+                    font-weight: 100;
+                }
+            }
+            &-btn{
+                bottom: 0;
+                position: absolute;
+                text-align: center;
+                left: 0;
+                right: 0;
+                display: none;
+            }
+        }
+    }
+
+    &-slider{
+        padding-top: 110px;
+        .slider-arrows{
+            top:50px;
+            opacity: .25;
+        }
+        .surf-box:nth-child(4n + 1){
+                margin-top: 32px;
+            
+        }
+        .surf-box:nth-child(4n + 3){
+                margin-top: 89px;
+        }
+        .slick-current{
+            .surf-box__inner-btn{
+                display: block;
+            }
+            .surf-box__inner {
+                background: rgba( #1C2121, 0.3);
+            }
+        }
+    }
+
+    &-map{
+        max-width: 1200px;
+        min-height: 635px;
+        background-image: url("../img/maps.png"); 
+        background-position: center/center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        .slick-list{
+            min-height: 635px;
+        }
+        .slick-current{
+            .slider-dots__content{
+                
+                display: block;
+                width: 285px;
+                padding: 28px 31px 0px 32px;
+                &-row{
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 30px;
+                }
+                &-title{
+                    font-size: 18px;
+                    font-weight: 800;
+                    line-height: 26px;
+                    padding-bottom: 8px;
+                    margin-bottom: 8px;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        background-color: $second-color;
+                        width: 80px;
+                        height: 1px;
+                        bottom: 0;
+                        left: 10px;
+                    }
+                }
+                &-subtitle{
+                    text-transform: capitalize;
+                    font-style: 16px;   
+                    line-height: 19px;
+                }
+                &-link {
+                    padding-top: 4px;
+                }
+                &-item{
+                    text-align: center;
+                    img{
+                        margin-bottom: 7px;
+                        
+
+                    }
+                }
+                &-number{
+                    font-style: 16px;
+                    line-height: 23px;
+                    font-weight: 800;
+                }
+                &-name{
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+
+    .slider-dots__circle{
+        width: 23px;
+        height: 23px;
+        background-color: $second-color;
+        border-radius: 50%;
+        
+    }   
+    .slider-dots__content{
+        display: none;
+        background: rgba(#000,.7);
+        border-radius: 6px;
+        position: absolute;
+        bottom: 35px;
+        transform: translateX(-50%);
+        &::before{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid $second-color;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            left: 50%;
+            bottom: -21px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+.slider-dots__surf{
+    position: relative;
+    
+}
+.slider-dots__surf-1{
+    top: 335px;
+    .slider-dots__content{
+        transform: translateX(0);
+        &::before{
+            left: 0px;
+        }
+    }
+}
+.slider-dots__surf-2{
+    top: 270px;
+    left: 0%;
+    .slider-dots__circle{
+        position: relative;
+        &::before{
+            content:'';
+            position: absolute;
+            background-image: url(../img/mini-marker.png);
+            background-size: cover;
+            width: 14px;
+            height: 17px;
+            right: -15px;
+            top: -25px;
+        }
+    }
+}
+.slider-dots__surf-3{
+    top: 330px;
+    left: 25px;
+}
+.slider-dots__surf-4{
+    top: 470px;
+    left: -25px;
+}
+.slider-dots__surf-5{
+    top: 230px;
+    left: -60px;
+
+}
+.slider-dots__surf-6{
+    top: 550px;
+    left: -120px;
+
+}
+.slider-dots__surf-7{
+    top: 375px;
+    left: -95px;
+}
+.slider-dots__surf-8{
+    top: 470px;
+    left: 35px;
+    .slider-dots__content{
+        transform: translateX(-262px);
+        &::before{
+            left: auto;
+            right: 0;
+        }
+    }
+}

@@ -38,7 +38,7 @@
                 right: 80px;
                 bottom: 116px;
                 text-align: right;
-                text-transform: uppercase;
+                // text-transform: uppercase;
             }
 
             &-title {
@@ -68,8 +68,7 @@
         font-weight: 800;
         font-size: 200px;
         line-height: 156px;
-        text-transform: uppercase;
-        color: #FFFFFF;
+        // text-transform: uppercase;
         opacity: 0.07;
         max-width: 467px;
         position: absolute;
@@ -99,14 +98,14 @@
             padding-top: 20px;
             &__list{
                 a{
-                    color:#fff;
+                    
                     span{
                         display: block;
                         font-weight: 500;
                         font-size: 12px;
                         line-height: 14px;
                         letter-spacing: 3px;
-                        color: #FFFFFF;
+                        text-transform: capitalize;
                         padding-top: 6px;
                         margin-bottom: 37px;
                     }
@@ -139,6 +138,7 @@
         position: relative;
         padding-left: 19px;
         display: inline-block;
+        text-transform: capitalize;
         &::before{
             content: "";
             position: absolute;
@@ -151,15 +151,13 @@
     }
 }
 
-
-
-
 .slider-dots {
     position: absolute;
     right: 50px;
     bottom: 36px;
     max-width: 920px;
     width: 100%;
+    cursor: pointer;
 
     .is-active{
         .slider-dots__box {

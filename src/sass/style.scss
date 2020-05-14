@@ -2,7 +2,7 @@
 @import'libs/reset'; // сброс стилей
 @import'libs/slick'; // стили сликс-лайдера
 @import'base/var';  // постoянные данные
-@import'libs/animate'; // стили сликс-лайдера
+
 
 
 
@@ -16,8 +16,17 @@ body{
     font-weight: 400;
     color: #fff;
     font-size: 16px;
+    background-color: #171919;
+    text-transform: uppercase;
+}
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
-@import'blocks/header'; // header
-
+@import'blocks/header'; // header style
+@import'blocks/_surf'; // surf style
 @import'blocks/media'; // медиазапросы
+
+
+@import'libs/animate'; // стили анимации 
