@@ -24,6 +24,26 @@ a{
         top: 50%;
     }
 }
+
+.line-right{
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.33333px;
+    opacity: 0.5;
+    padding-right: 103px;
+    position: relative; 
+    display: inline-block; 
+    &::before{ 
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        top: 50%;
+    }
+}
+
 .slider{
     &-arrows{
         position: absolute; 
@@ -107,6 +127,17 @@ a{
             transform: translateY(-50%);
             top:50%;
             right: 17px;
+        }
+    }
+}
+ 
+.descr{
+    display: inline-block;
+    &__head{
+        font-size: 40px;
+        font-weight: 800;  
+        span{
+            font-weight: 100;
         }
     }
 }
