@@ -1,7 +1,9 @@
 
 @import'libs/reset'; // сброс стилей
 @import'libs/slick'; // стили сликс-лайдера
-@import'base/var';  // постoянные данные
+@import'base/var';  // постoянные данные.
+@import'libs/quantity';  // плюсики минусики при подсчете.
+
 
 
 
@@ -27,6 +29,7 @@ body{
 @import'blocks/header'; // header style
 @import'blocks/_surf'; // surf style
 @import'blocks/_travel'; //travel style
+@import'blocks/_sleep'; //sleep style
 @import'blocks/media'; // медиазапросы
 
 

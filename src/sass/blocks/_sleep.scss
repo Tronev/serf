@@ -1,6 +1,6 @@
-.travel{
+.sleep{
     padding: 160px 0 265px;
-    background-image: url(../img/coctail.png);
+    background-image: url(../img/frangipani.png);
     background-repeat: no-repeat;
     background-position: bottom right;
     margin-bottom: 35px;
@@ -21,13 +21,20 @@
             background-repeat: no-repeat;
             background-position: right center;
             margin-top: -230px;
+            background-size: contain;
             .descr__head{
                 position: relative;
-                img{
+                padding-right: 215px;
+                .descr__head_sleep-list{
                     position: absolute;
-                    top: 0;
-                    right: -78px;
-                }
+                    right: 0;
+                    top: -25%;
+                    list-style: none;
+                    li{
+                        display: inline-block;
+                        margin-left: -25px;
+                    }
+                }    
             }
             
         }
@@ -66,9 +73,8 @@
                 font-size: 40px;
                 line-height: 36px;
                 padding-left: 40px;
-                
                 position: relative;
-                span{
+                &_span{
                     font-size: 14px;
                     line-height: 36px; 
                     font-weight: 400;
